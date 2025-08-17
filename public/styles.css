@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background:#f7f7f7; }
+main { max-width: 900px; margin: 20px auto; padding: 12px; }
+h1 { font-size: 22px; }
+.card { background:#fff; padding:12px; margin:12px 0; border:1px solid #e6e6e6; border-radius:8px; }
+textarea { width: 100%; min-height: 160px; padding: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+input[type="text"] { width: 100%; padding: 8px; margin: 8px 0; }
+button { padding: 8px 12px; cursor: pointer; }
+#sumStatus, #sendStatus { margin-top: 8px; font-size: 14px; }

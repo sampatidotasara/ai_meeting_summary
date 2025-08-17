@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Meeting Summarizer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>AI Meeting Notes Summarizer</h1>
+
+    <section class="card">
+      <h2>1) Transcript</h2>
+      <input id="fileInput" type="file" accept=".txt" />
+      <textarea id="transcript" placeholder="Paste transcript here..."></textarea>
+    </section>
+
+    <section class="card">
+      <h2>2) Instruction</h2>
+      <input id="instruction" type="text" placeholder="e.g., Bullet points for execs; highlight action items" />
+      <button id="summarizeBtn">Generate Summary</button>
+      <div id="sumStatus"></div>
+    </section>
+
+    <section class="card">
+      <h2>3) Editable Summary</h2>
+      <textarea id="summary" placeholder="Your summary will appear here and is editable..."></textarea>
+    </section>
+
+    <section class="card">
+      <h2>4) Share via Email</h2>
+      <input id="emails" type="text" placeholder="Comma-separated recipients (e.g., a@x.com,b@y.com)" />
+      <input id="subject" type="text" placeholder="Subject (default: Meeting Summary)" />
+      <button id="sendBtn">Send Summary</button>
+      <div id="sendStatus"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
